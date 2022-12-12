@@ -12,7 +12,7 @@ def download_file(url, file_path):
 
 
 def download_github_code(path):
-    url = 'https://github.com/49n3r/VAE_Assignment_OU/blob/main/{}'
+    url = 'https://raw.githubusercontent.com/49n3r/VAE_Assignment_OU/blob/main/{}'
     file_path = path.rsplit("/")[-1]
     download_file(url.format(path), file_path)
 
