@@ -3,18 +3,17 @@
 import os
 
 
-def download_file(url, file_path):
-    print(url, file_path)
-    if os.path.exists(file_path):
-        os.remove(file_path)
+def download_file(url, pyCode):
+    print(url, pyCode)
+    if os.path.exists(pyCode):
+        os.remove(pyCode)
     template = "wget '{}' -O '{}'"
-    os.system(template.format(url, file_path))
-debugger.py
+    os.system(template.format(url, pyCode))
 
-def download_github_code(path):
+
+def download_github_code(pyCode):
     url = "https://raw.githubusercontent.com/49n3r/VAE_Assignment_OU/main/{}"
-    #file_path = path #.rsplit("/")[-1]
-    download_file(url.format(path))#, file_path)
+    download_file(url.format(pyCode), pyCode)
 
 
 
