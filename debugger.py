@@ -7,7 +7,7 @@ from keras.layers import Input
 from keras.datasets import mnist
 
 
-class VAEGrader(object):
+class VAEDebugger(object):
     def __init__(self):
 #         self.submission_page = 'https://www.coursera.org/api/' \
 #                                'onDemandProgrammingScriptSubmissions.v1'
