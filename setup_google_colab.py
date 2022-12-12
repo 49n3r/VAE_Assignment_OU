@@ -9,12 +9,12 @@ def download_file(url, file_path):
         os.remove(file_path)
     template = "wget '{}' -O '{}'"
     os.system(template.format(url, file_path))
-
+debugger.py
 
 def download_github_code(path):
-    url = 'https://raw.githubusercontent.com/49n3r/VAE_Assignment_OU/main/{}'
-    file_path = path.rsplit("/")[-1]
-    download_file(url.format(path), file_path)
+    url = "https://raw.githubusercontent.com/49n3r/VAE_Assignment_OU/main/{}"
+    #file_path = path #.rsplit("/")[-1]
+    download_file(url.format(path))#, file_path)
 
 
 
