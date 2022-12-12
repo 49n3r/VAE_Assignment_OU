@@ -12,36 +12,24 @@ def download_file(url, file_path):
 
 
 def download_github_code(path):
-    course = 'bayesian-methods-for-ml'
-    branch = 'master'
-    url = 'https://raw.githubusercontent.com/hse-aml/{}/{}/{}'
+    url = 'https://github.com/49n3r/VAE_Assignment_OU/blob/main/{}'
     file_path = path.rsplit("/")[-1]
-    download_file(url.format(course, branch, path), file_path)
+    download_file(url.format(path), file_path)
 
 
-def load_data_week2():
-    download_github_code("week2/w2_grader.py")
-    download_github_code("week2/samples.npz")
 
 
-def load_data_week4():
-    download_github_code("week4/w4_grader.py")
-    download_github_code("week4/adult_us_postprocessed.csv")
+def load_data_cVAE():
+    download_github_code("debugger.py")
+    download_github_code("test_data.npz")
 
 
-def load_data_week5():
-    download_github_code("week5/w5_grader.py")
-    download_github_code("week5/test_data.npz")
 
 
-def load_data_week6():
-    download_github_code("week6/w6_grader.py")
-
-
-def load_data_final_project():
-    download_github_code("week7_(final_project)/utils.py")
-    download_file(
-        "https://github.com/hse-aml/bayesian-methods-for-ml/"
-        "releases/download/v0.1/CelebA_VAE_small_8.h5",
-        "CelebA_VAE_small_8.h5"
-    )
+# def load_data_FaceDetect():
+#     download_github_code("utils.py")
+#     download_file(
+#         "https://github.com/hse-aml/bayesian-methods-for-ml/"
+#         "releases/download/v0.1/CelebA_VAE_small_8.h5",
+#         "CelebA_VAE_small_8.h5"
+#     )

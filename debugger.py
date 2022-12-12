@@ -9,9 +9,9 @@ from keras.datasets import mnist
 
 class VAEGrader(object):
     def __init__(self):
-        self.submission_page = 'https://www.coursera.org/api/' \
-                               'onDemandProgrammingScriptSubmissions.v1'
-        self.assignment_key = 'Pf_j7noDEeexdQ4iFFMrvA'
+#         self.submission_page = 'https://www.coursera.org/api/' \
+#                                'onDemandProgrammingScriptSubmissions.v1'
+#         self.assignment_key = 'Pf_j7noDEeexdQ4iFFMrvA'
         self.parts = OrderedDict([
             ('S66Mi', '1 (vlb)'),
             ('dXfpy', '2.1 (samples mean)'),
