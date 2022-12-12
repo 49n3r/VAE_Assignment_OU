@@ -25,10 +25,6 @@ def load_data_cVAE():
 
 
 
-# def load_data_FaceDetect():
-#     download_github_code("utils.py")
-#     download_file(
-#         "https://github.com/hse-aml/bayesian-methods-for-ml/"
-#         "releases/download/v0.1/CelebA_VAE_small_8.h5",
-#         "CelebA_VAE_small_8.h5"
-#     )
+def load_data_FaceDetect():
+    download_github_code("utils.py")
+    download_file("https://catmailohio-my.sharepoint.com/:u:/g/personal/cu884120_ohio_edu/EeAaRwEvGXpClcaSxh7zjKAB1_bPDg_UiJkFPLSZB7nAqQ")
